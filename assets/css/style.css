@@ -31,19 +31,25 @@ header h1 {
 header a {
   text-decoration: none;
   color: #fce138;
+  
+  
 }
 
 header nav {
   margin: 7px 0;
 }
 
+header nav ul{
+  display: flex;
+  flex-direction: row;
+}
 header nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  
+    
 }
 
 header nav ul li a {
@@ -114,11 +120,15 @@ section {
 
 .hero-form {
   border: 3px solid #024e76;
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+
+
 }
 
 .hero-form h3 {
@@ -137,6 +147,7 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px; 
+  border-radius: 10px;
 }
 
 .hero-form label {
@@ -149,6 +160,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 } 
 /* HERO STYLES END */
 
@@ -328,6 +340,7 @@ height: 400px;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
 }
 .contact-form button {
   width: 100%;
@@ -337,6 +350,7 @@ height: 400px;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 /* REACH OUT STYLES END */
@@ -369,6 +383,20 @@ height: 400px;
     display: flex;
     flex-direction: row;
 
+  }
+  header h1 {
+    /* add alongside your existing declarations */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a {
+    /* and here */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-cta h2 {
+    /* and here */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header nav ul li a {
     font-size: 20px;
